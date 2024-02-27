@@ -3215,6 +3215,10 @@ NavigationContainer
   top: 1074px;
   white-space: pre;
   width: auto;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transform: scale(1.05);
 }
 .meme-k7DFD .meme-1gjx9bh {
   background-color: #fff;

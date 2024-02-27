@@ -7,10 +7,10 @@ import Link from "next/link";
 export default function Home() {
   const ref = useRef(null);
   const isInView = useInView(ref);
-  const fhmControl = useAnimation()
-  const c72aw7Control = useAnimation()
+  const fhmControl = useAnimation();
+  const c72aw7Control = useAnimation();
   useEffect(() => {
-    if(isInView) {
+    if (isInView) {
       fhmControl.start({
         opacity: 1,
         rotate: 165,
@@ -28,7 +28,7 @@ export default function Home() {
         },
         transformTemplate: (props) =>
           `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
-      })
+      });
       c72aw7Control.start({
         opacity: 1,
         rotate: 0,
@@ -46,7 +46,7 @@ export default function Home() {
         },
         transformTemplate: (props) =>
           `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
-      })
+      });
     }
     console.log(isInView);
   }, [isInView, c72aw7Control]);
@@ -176,24 +176,25 @@ export default function Home() {
             <motion.div
               ref={ref}
               initial={{ opacity: 0.001, rotate: 165, scale: 1, x: -150, y: 0 }}
-              
               animate={fhmControl}
-              whileInView={{ opacity: 1,
-        rotate: 165,
-        rotateX: 0,
-        rotateY: 0,
-        scale: 1,
-        x: 0,
-        y: 0,
-        transition: {
-          damping: 30,
-          delay: 0.5,
-          mass: 1.2,
-          stiffness: 400,
-          type: "spring",
-        },
-        transformTemplate: (props) =>
-          `perspective(1200px) ${props.__Appear_Animation_Transform__}`, }}
+              whileInView={{
+                opacity: 1,
+                rotate: 165,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  damping: 30,
+                  delay: 0.5,
+                  mass: 1.2,
+                  stiffness: 400,
+                  type: "spring",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-1hz1fhm"
               data-meme-name="Splash Middle"
               name="Splash Middle"
@@ -569,36 +570,35 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div
-            ref={ref}
+              ref={ref}
               initial={{ opacity: 0.001, rotate: 0, scale: 1, x: -150, y: 0 }}
-              
               animate={c72aw7Control}
-              whileInView={{ opacity: 1,
-        rotate: 0,
-        rotateX: 0,
-        rotateY: 0,
-        scale: 1,
-        x: 0,
-        y: 0,
-        transition: {
-          damping: 30,
-          delay: 0.6,
-          mass: 1.2,
-          stiffness: 400,
-          type: "spring",
-        },
-        transformTemplate: (props) =>
-          `perspective(1200px) ${props.__Appear_Animation_Transform__}`, }}
+              whileInView={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  damping: 30,
+                  delay: 0.6,
+                  mass: 1.2,
+                  stiffness: 400,
+                  type: "spring",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-c72aw7 hover:scale-105 hover:drop-shadow-xl tansition-all duration-500"
               data-meme-name="Group 2 2"
               name="Group 2 2"
-              style={
-                {
-                  opacity: "0",
-                  transform:
-                    "perspective(1200px) translateX(-150px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0)",
-                }
-              }
+              style={{
+                opacity: "0",
+                transform:
+                  "perspective(1200px) translateX(-150px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0)",
+              }}
             >
               <div
                 data-meme-background-image-wrapper="true"
@@ -958,7 +958,25 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-na2wj5"
               data-meme-name="Rectangle 5"
               name="Rectangle 5"
@@ -970,7 +988,25 @@ export default function Home() {
                 }
               }
             />
-            <div
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-e8y4e0"
               data-meme-name="Rectangle 9"
               name="Rectangle 9"
@@ -1169,25 +1205,25 @@ export default function Home() {
               </p>
             </div>
             <motion.div
-            initial={{ opacity: 0.001, rotate: 0, scale: 1, x: -150, y: 0 }}
-                animate={{
-                  opacity: 1,
-                  rotate: 0,
-                  rotateX: 0,
-                  rotateY: 0,
-                  scale: 1,
-                  x: 0,
-                  y: 0,
-                  transition: {
-                    damping: 30,
-                    delay: 0.3,
-                    mass: 1.3,
-                    stiffness: 400,
-                    type: "spring",
-                  },
-                  transformTemplate: (props) =>
-                    `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
-                }}
+              initial={{ opacity: 0.001, rotate: 0, scale: 1, x: -150, y: 0 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  damping: 30,
+                  delay: 0.3,
+                  mass: 1.3,
+                  stiffness: 400,
+                  type: "spring",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-10ezj0c"
               style={
                 {
@@ -1232,7 +1268,6 @@ export default function Home() {
                 </p>
               </div>
               <div
-              
                 className="meme-p4s28x"
                 data-meme-component-type="RichTextContainer"
                 data-meme-name="MEME MayheM?"
@@ -1269,25 +1304,25 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div
-             initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: 0 }}
-                animate={{
-                  opacity: 1,
-                  rotate: 0,
-                  rotateX: 0,
-                  rotateY: 0,
-                  scale: 1,
-                  x: -150,
-                  y: 0,
-                  transition: {
-                    damping: 30,
-                    delay: 0.3,
-                    mass: 1.3,
-                    stiffness: 400,
-                    type: "spring",
-                  },
-                  transformTemplate: (props) =>
-                    `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
-                }}
+              initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: 0 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: -150,
+                y: 0,
+                transition: {
+                  damping: 30,
+                  delay: 0.3,
+                  mass: 1.3,
+                  stiffness: 400,
+                  type: "spring",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               id="whatis"
               className="meme-1scom9"
               data-meme-component-type="RichTextContainer"
@@ -1371,7 +1406,25 @@ export default function Home() {
                 }
               }
             >
-              <div
+              <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
                 className="meme-1qgxe9h"
                 data-meme-name="Mouth Comment"
                 name="Mouth Comment"
@@ -1388,8 +1441,8 @@ export default function Home() {
                   }}
                 >
                   <Image
-                    width={100}
-                    height={100}
+                    width={50}
+                    height={50}
                     alt=""
                     loading="lazy"
                     sizes="530px"
@@ -1398,17 +1451,36 @@ export default function Home() {
                     style={{
                       borderRadius: "inherit",
                       display: "block",
-                      height: "100%",
+                      height: "69%",
                       imageRendering: "auto",
                       objectFit: "contain",
                       objectPosition: "center",
-                      width: "100%",
+                      width: "69%",
                     }}
+                    className='ml-20 mt-16'
                   />
                 </div>
-              </div>
-              <div
-                className="meme-1syj0cg"
+              </motion.div>
+              <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: -70,
+                y: -20,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
+                className="meme-1syj0cg ml-[-55px]"
                 data-meme-component-type="RichTextContainer"
                 data-meme-name="BUY Now"
                 style={{
@@ -1421,7 +1493,7 @@ export default function Home() {
                 }}
               >
                 <p
-                  className="meme-text"
+                  className="meme-text "
                   style={{
                     "--meme-font-size": "106.51931762695312px",
                     "--meme-line-height": "96.41px",
@@ -1429,11 +1501,11 @@ export default function Home() {
                   }}
                 >
                   <span
-                    className="meme-text"
+                    className="meme-text  "
                     style={{
                       "--font-selector": "R0Y7THVja2llc3QgR3V5LXJlZ3VsYXI=",
                       "--meme-font-family": "'Luckiest Guy'",
-                      "--meme-font-size": "106.52px",
+                      "--meme-font-size": "80.52px",
                       "--meme-text-transform": "capitalize",
                     }}
                   >
@@ -1441,7 +1513,7 @@ export default function Home() {
                   </span>
                 </p>
                 <p
-                  className="meme-text"
+                  className="meme-text mt-[-10px]"
                   style={{
                     "--meme-font-size": "106.51931762695312px",
                     "--meme-line-height": "96.41px",
@@ -1453,14 +1525,14 @@ export default function Home() {
                     style={{
                       "--font-selector": "R0Y7THVja2llc3QgR3V5LXJlZ3VsYXI=",
                       "--meme-font-family": "'Luckiest Guy'",
-                      "--meme-font-size": "106.52px",
+                      "--meme-font-size": "80.52px",
                       "--meme-text-transform": "capitalize",
                     }}
                   >
                     Now
                   </span>
                 </p>
-              </div>
+              </motion.div>
             </div>
             <div
               className="meme-wraj1i"
@@ -2108,12 +2180,12 @@ export default function Home() {
               </div>
             </div>
             <div
-              className="meme-121zhyu"
+              className="meme-121zhyu "
               data-meme-name="Rectangle 18"
               name="Rectangle 18"
             />
             <div
-              className="meme-1acpiwe"
+              className="meme-1acpiwe hover:scale-105 transition-all duration-300"
               data-meme-component-type="RichTextContainer"
               data-meme-name="ca: .................................................................................................................................."
               style={{
@@ -2126,14 +2198,14 @@ export default function Home() {
               }}
             >
               <p
-                className="meme-text"
+                className="meme-text hover:scale-105 transition-all duration-300"
                 style={{
                   "--meme-font-size": "42.082191467285156px",
                   "--meme-line-height": "124%",
                 }}
               >
                 <span
-                  className="meme-text"
+                  className="meme-text hover:scale-105 transition-all duration-300"
                   style={{
                     "--font-selector": "R0Y7THVja2llc3QgR3V5LXJlZ3VsYXI=",
                     "--meme-font-family": "'Luckiest Guy'",
@@ -2171,7 +2243,7 @@ export default function Home() {
               }}
             >
               <p
-                className="meme-text"
+                className="meme-text hover:scale-105 transition-all duration-300"
                 style={{
                   "--meme-font-size": "42.082191467285156px",
                   "--meme-line-height": "124%",
@@ -2227,7 +2299,25 @@ export default function Home() {
                 </span>
               </p>
             </div>
-            <div
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-c18bi7"
               data-meme-name="How to"
               name="How to"
@@ -2667,8 +2757,27 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-            </div>
-            <a
+            </motion.div>
+            
+            <motion.a
+            initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-191h71q meme-lux5qc"
               data-meme-component-type="SVG"
               data-meme-name="Top Icons"
@@ -2703,8 +2812,26 @@ export default function Home() {
                   <use href="#svg1925194857_1723" />
                 </svg>
               </div>
-            </a>
-            <div
+            </motion.a>
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-10quygo"
               data-meme-name="Group 11"
               name="Group 11"
@@ -2750,8 +2877,26 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-            </div>
-            <div
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-newq5x"
               data-meme-name="Group 10"
               name="Group 10"
@@ -2797,7 +2942,7 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-            </div>
+            </motion.div>
             <div
               className="meme-j9tdie"
               data-meme-name="Group 9"
@@ -3674,7 +3819,7 @@ export default function Home() {
               name="Raydium"
             >
               <div
-                className="meme-kjn3mg"
+                className="meme-kjn3mg hover:scale-105 transition-all duration-300"
                 data-meme-name="Rectangle 28"
                 name="Rectangle 28"
               />
