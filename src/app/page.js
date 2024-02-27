@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main>
-      {/* ---- */}
-
       <div id="main">
         <div
           className="meme-k7DFD meme-72rtr7"
@@ -29,7 +29,6 @@ export default function Home() {
               name="Rectangle 3"
             />
             <div
-              
               className="meme-msy0nd"
               data-meme-appear-id="msy0nd"
               data-meme-name="Splash"
@@ -50,7 +49,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   sizes="1109.7665px"
                   src="/images/XtQUrYKzRqT3NjVLLUM0IuDVro.png"
@@ -86,7 +87,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   loading="lazy"
                   sizes="1109.7665px"
@@ -128,11 +131,13 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   loading="lazy"
                   sizes="1848.4729px"
-                  src="../framerusercontent.com/images/l1YhgL1tMALnUnLGbQLmzc2D89s.png"
+                  src="/images/l1YhgL1tMALnUnLGbQLmzc2D89s.png"
                   srcSet="                  https://framerusercontent.com/images/l1YhgL1tMALnUnLGbQLmzc2D89s.png?scale-down-to=512   512w,                  https://framerusercontent.com/images/l1YhgL1tMALnUnLGbQLmzc2D89s.png?scale-down-to=1024 1024w,                  https://framerusercontent.com/images/l1YhgL1tMALnUnLGbQLmzc2D89s.png?scale-down-to=2048 2048w,                  https://framerusercontent.com/images/l1YhgL1tMALnUnLGbQLmzc2D89s.png                    3698w                "
                   style={{
                     borderRadius: "inherit",
@@ -171,7 +176,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   sizes="621px"
                   src="/images/3QAyoLwOuLLahig1sufVeTZcA.png"
@@ -230,7 +237,10 @@ export default function Home() {
                         "--meme-text-transform": "capitalize",
                       }}
                     >
-                      Home
+                      <Link href="#main" className=" hover:underline">
+                        {" "}
+                        Home
+                      </Link>
                     </span>
                   </p>
                 </div>
@@ -265,7 +275,10 @@ export default function Home() {
                         "--meme-text-transform": "capitalize",
                       }}
                     >
-                      How it Works
+                      <Link href="#whatis" className=" hover:underline">
+                        {" "}
+                        How it Works
+                      </Link>
                     </span>
                   </p>
                 </div>
@@ -300,7 +313,9 @@ export default function Home() {
                         "--meme-text-transform": "capitalize",
                       }}
                     >
-                      Tokenomics
+                      <Link href="#token" className=" hover:underline">
+                        Tokenomics
+                      </Link>
                     </span>
                   </p>
                 </div>
@@ -334,7 +349,9 @@ export default function Home() {
                         "--meme-text-transform": "capitalize",
                       }}
                     >
-                      RoadMap
+                      <Link href="#what_to" className=" hover:underline">
+                        RoadMap
+                      </Link>
                     </span>
                   </p>
                 </div>
@@ -413,7 +430,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   sizes="795px"
                   src="/images/2ykvHrJKF5SmuIVXGa856uby0Ls.png"
@@ -453,7 +472,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   loading="lazy"
                   sizes="562px"
@@ -598,7 +619,9 @@ export default function Home() {
                     top: "0",
                   }}
                 >
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     alt=""
                     sizes="147px"
                     src="/images/fE6wpK3B05VmpvmvPVyTrWCHHk.png"
@@ -697,7 +720,9 @@ export default function Home() {
                     top: "0",
                   }}
                 >
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     alt=""
                     src="/images/hi495LHzgiNb9pklbt3l5G1wIE.png"
                     style={{
@@ -725,7 +750,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   sizes="63.8821px"
                   src="/images/MtojRxTJ0DS7zkWTFV2mS7wRqqA.png"
@@ -1033,6 +1060,7 @@ export default function Home() {
               </div>
             </div>
             <div
+              id="whatis"
               className="meme-1scom9"
               data-meme-component-type="RichTextContainer"
               data-meme-name="What is"
@@ -1131,7 +1159,9 @@ export default function Home() {
                     top: "0",
                   }}
                 >
-                  <img
+                  <Image
+                    width={100}
+                    height={100}
                     alt=""
                     loading="lazy"
                     sizes="530px"
@@ -1278,6 +1308,7 @@ export default function Home() {
               </div>
             </div>
             <div
+              id="token"
               className="meme-1nnxfzc"
               data-meme-name="Group 6"
               name="Group 6"
@@ -1828,7 +1859,9 @@ export default function Home() {
                   top: "0",
                 }}
               >
-                <img
+                <Image
+                  width={100}
+                  height={100}
                   alt=""
                   loading="lazy"
                   sizes="501px"
@@ -2611,6 +2644,7 @@ export default function Home() {
               </div>
             </div>
             <div
+              id="what_to"
               className="meme-x8i0wt"
               data-meme-component-type="RichTextContainer"
               data-meme-name="What to Expect"
@@ -3169,7 +3203,8 @@ export default function Home() {
                     "--meme-text-transform": "capitalize",
                   }}
                 >
-                  ® 2023 Meme Mayhem | All Rights Reserved contact |
+                  ® {new Date().getFullYear()} Meme Mayhem | All Rights Reserved
+                  contact |
                 </span>
                 <span
                   className="meme-text"
