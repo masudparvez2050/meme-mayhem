@@ -9,6 +9,9 @@ export default function Home() {
   const isInView = useInView(ref);
   const fhmControl = useAnimation();
   const c72aw7Control = useAnimation();
+  const comControl = useAnimation();
+  const com2Control = useAnimation();
+  const com1Control = useAnimation();
   useEffect(() => {
     if (isInView) {
       fhmControl.start({
@@ -47,6 +50,64 @@ export default function Home() {
         transformTemplate: (props) =>
           `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
       });
+
+      comControl.start({
+        opacity: 1,
+        rotate: 0,
+        rotateX: 0,
+        rotateY: 0,
+        scale: 1,
+        x: 0,
+        y: 0,
+        transition: {
+          delay: 0,
+          duration: 0.6,
+          ease: [1, 0.01, 0, 0.98],
+          type: "tween",
+        },
+        transformTemplate: (props) =>
+          `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+      });
+
+      com2Control.start({
+        opacity: 1,
+        rotate: 0,
+        rotateX: 0,
+        rotateY: 0,
+        scale: 1,
+        x: -150,
+        y: 0,
+        transition: {
+          damping: 30,
+          delay: 0.3,
+          mass: 1.3,
+          stiffness: 400,
+          type: "spring",
+        },
+        transformTemplate: (props) =>
+          `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+
+    
+      });
+
+      com1Control.start({
+        opacity: 1,
+        rotate: 0,
+        rotateX: 0,
+        rotateY: 0,
+        scale: 1,
+        x: 0,
+        y: 0,
+        transition: {
+          damping: 30,
+          delay: 0.3,
+          mass: 1.3,
+          stiffness: 400,
+          type: "spring",
+        },
+        transformTemplate: (props) =>
+          `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+      })
     }
     console.log(isInView);
   }, [isInView, c72aw7Control]);
@@ -959,8 +1020,10 @@ export default function Home() {
               </div>
             </div>
             <motion.div
+              ref={ref}
               initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
-              animate={{
+              animate={comControl}
+              whileInView={{
                 opacity: 1,
                 rotate: 0,
                 rotateX: 0,
@@ -989,8 +1052,10 @@ export default function Home() {
               }
             />
             <motion.div
+              ref={ref}
               initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
-              animate={{
+              animate={comControl}
+              whileInView={{
                 opacity: 1,
                 rotate: 0,
                 rotateX: 0,
@@ -1205,8 +1270,10 @@ export default function Home() {
               </p>
             </div>
             <motion.div
+            ref={ref}
               initial={{ opacity: 0.001, rotate: 0, scale: 1, x: -150, y: 0 }}
-              animate={{
+              animate={com1Control}
+              whileInView={{
                 opacity: 1,
                 rotate: 0,
                 rotateX: 0,
@@ -1304,8 +1371,10 @@ export default function Home() {
               </div>
             </motion.div>
             <motion.div
+              ref={ref}
               initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: 0 }}
-              animate={{
+              animate={com2Control}
+              whileInView={{
                 opacity: 1,
                 rotate: 0,
                 rotateX: 0,
@@ -1407,24 +1476,26 @@ export default function Home() {
               }
             >
               <motion.div
-              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
-              animate={{
-                opacity: 1,
-                rotate: 0,
-                rotateX: 0,
-                rotateY: 0,
-                scale: 1,
-                x: 0,
-                y: 0,
-                transition: {
-                  delay: 0,
-                  duration: 0.6,
-                  ease: [1, 0.01, 0, 0.98],
-                  type: "tween",
-                },
-                transformTemplate: (props) =>
-                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
-              }}
+                ref={ref}
+                initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+                animate={comControl}
+                whileInView={{
+                  opacity: 1,
+                  rotate: 0,
+                  rotateX: 0,
+                  rotateY: 0,
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                  transition: {
+                    delay: 0,
+                    duration: 0.6,
+                    ease: [1, 0.01, 0, 0.98],
+                    type: "tween",
+                  },
+                  transformTemplate: (props) =>
+                    `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+                }}
                 className="meme-1qgxe9h"
                 data-meme-name="Mouth Comment"
                 name="Mouth Comment"
@@ -1457,29 +1528,31 @@ export default function Home() {
                       objectPosition: "center",
                       width: "69%",
                     }}
-                    className='ml-20 mt-16'
+                    className="ml-20 mt-16"
                   />
                 </div>
               </motion.div>
               <motion.div
-              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
-              animate={{
-                opacity: 1,
-                rotate: 0,
-                rotateX: 0,
-                rotateY: 0,
-                scale: 1,
-                x: -70,
-                y: -20,
-                transition: {
-                  delay: 0,
-                  duration: 0.6,
-                  ease: [1, 0.01, 0, 0.98],
-                  type: "tween",
-                },
-                transformTemplate: (props) =>
-                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
-              }}
+                ref={ref}
+                initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+                animate={comControl}
+                whileInView={{
+                  opacity: 1,
+                  rotate: 0,
+                  rotateX: 0,
+                  rotateY: 0,
+                  scale: 1,
+                  x: -70,
+                  y: -20,
+                  transition: {
+                    delay: 0,
+                    duration: 0.6,
+                    ease: [1, 0.01, 0, 0.98],
+                    type: "tween",
+                  },
+                  transformTemplate: (props) =>
+                    `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+                }}
                 className="meme-1syj0cg ml-[-55px]"
                 data-meme-component-type="RichTextContainer"
                 data-meme-name="BUY Now"
@@ -2300,8 +2373,10 @@ export default function Home() {
               </p>
             </div>
             <motion.div
+              ref={ref}
               initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
-              animate={{
+              animate={comControl}
+              whileInView={{
                 opacity: 1,
                 rotate: 0,
                 rotateX: 0,
@@ -2758,9 +2833,9 @@ export default function Home() {
                 </p>
               </div>
             </motion.div>
-            
+
             <motion.a
-            initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
               animate={{
                 opacity: 1,
                 rotate: 0,
