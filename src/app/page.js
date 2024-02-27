@@ -29,16 +29,34 @@ export default function Home() {
               data-meme-name="Rectangle 3"
               name="Rectangle 3"
             />
-            <div
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: -150 }}
+              animate={{
+                opacity: 1,
+                rotate: -92,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.3,
+                  ease: [1, 0, 0, 1.01],
+                  type: "tween",
+                },
+                transformTemplate:
+                  "perspective(1200px) __Appear_Animation_Transform__ rotate(-92deg)",
+              }}
               className="meme-msy0nd"
               data-meme-appear-id="msy0nd"
               data-meme-name="Splash"
               name="Splash"
-              // style={{
-              //   opacity: "0.001",
-              //   transform:
-              //     "perspective(1200px) translateX(0px) translateY(-150px) scale(1) rotate(0deg) translateZ(0) rotate(-92deg)",
-              // }}
+              style={{
+                opacity: "0.001",
+                transform:
+                  "perspective(1200px) translateX(0px) translateY(-150px) scale(1) rotate(0deg) translateZ(0) rotate(-92deg)",
+              }}
             >
               <div
                 style={{
@@ -68,7 +86,7 @@ export default function Home() {
                   }}
                 />
               </div>
-            </div>
+            </motion.div>
             <div
               className="meme-2l8mak"
               data-meme-name="Splash Middle"
@@ -153,18 +171,34 @@ export default function Home() {
               </div>
             </div>
 
-            <div
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: -150 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.3,
+                  ease: [1, 0, 0, 1.01],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-lkqyqf"
               data-meme-appear-id="lkqyqf"
               data-meme-name="Splash Right"
               name="Splash Right"
-              style={
-                {
-                  // opacity: "0.001",
-                  // transform:
-                  //   "perspective(1200px) translateX(0px) translateY(-150px) scale(1) rotate(0deg) translateZ(0)",
-                }
-              }
+              style={{
+                opacity: "0.001",
+                transform:
+                  "perspective(1200px) translateX(0px) translateY(-150px) scale(1) rotate(0deg) translateZ(0)",
+              }}
             >
               <div
                 data-meme-background-image-wrapper="true"
@@ -195,7 +229,7 @@ export default function Home() {
                   }}
                 />
               </div>
-            </div>
+            </motion.div>
             <div
               className="meme-5f42ku"
               data-meme-name="MEME MAYHEM"
@@ -407,18 +441,35 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div
-              className="meme-91idpa"
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 150, y: 0 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  damping: 30,
+                  delay: 0.2,
+                  mass: 1.2,
+                  stiffness: 400,
+                  type: "spring",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
+              className="meme-91idpa "
               data-meme-appear-id="91idpa"
               data-meme-name="Group 2 1"
               name="Group 2 1"
-              style={
-                {
-                  // opacity: "0.001",
-                  // transform:
-                  //   "perspective(1200px) translateX(150px) translateY(0px)                scale(1) rotate(0deg) translateZ(0)",
-                }
-              }
+              style={{
+                opacity: "0.001",
+                transform:
+                  "perspective(1200px) translateX(150px) translateY(0px) scale(1) rotate(0deg) translateZ(0)",
+              }}
             >
               <div
                 data-meme-background-image-wrapper="true"
@@ -432,7 +483,7 @@ export default function Home() {
                 }}
               >
                 <Image
-                  
+                  className="hover:scale-105 transition-all duration-500 hover:drop-shadow-2xl hover:shadow-green-500"
                   width={100}
                   height={100}
                   alt=""
@@ -450,7 +501,7 @@ export default function Home() {
                   }}
                 />
               </div>
-            </div>
+            </motion.div>
             <div
               className="meme-c72aw7"
               data-meme-name="Group 2 2"
@@ -494,31 +545,64 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div
+            <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 0.5, x: 0, y: 50 }}
+              animate={{
+                opacity: 1,
+                rotate: 0,
+                rotateX: 0,
+                rotateY: 0,
+                scale: 1,
+                x: 0,
+                y: 0,
+                transition: {
+                  delay: 0,
+                  duration: 0.6,
+                  ease: [1, 0.01, 0, 0.98],
+                  type: "tween",
+                },
+                transformTemplate: (props) =>
+                  `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+              }}
               className="meme-zgfcfs"
               data-meme-appear-id="zgfcfs"
               data-meme-name="Meme Mayhem Title"
               name="Meme Mayhem Title"
-              style={
-                {
-                  // opacity: "0.001",
-                  // transform:
-                  //   "perspective(1200px) translateX(0px) translateY(50px)                scale(0.5) rotate(0deg) translateZ(0)",
-                }
-              }
+              style={{
+                opacity: "0.001",
+                transform:
+                  "perspective(1200px) translateX(0px) translateY(50px) scale(0.5) rotate(0deg) translateZ(0)",
+              }}
             >
-              <div
+              <motion.div
+                initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 150, y: 0 }}
+                animate={{
+                  opacity: 1,
+                  rotate: 0,
+                  rotateX: 0,
+                  rotateY: 0,
+                  scale: 1,
+                  x: 0,
+                  y: 0,
+                  transition: {
+                    damping: 30,
+                    delay: 0.3,
+                    mass: 1.3,
+                    stiffness: 400,
+                    type: "spring",
+                  },
+                  transformTemplate: (props) =>
+                    `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+                }}
                 className="meme-13pxjh"
                 data-meme-appear-id="13pxjh"
                 data-meme-name="Group 18"
                 name="Group 18"
-                style={
-                  {
-                    // opacity: "0.001",
-                    // transform:
-                    //   "perspective(1200px) translateX(150px) translateY(0px)                  scale(1) rotate(0deg) translateZ(0)",
-                  }
-                }
+                style={{
+                  opacity: "0.001",
+                  transform:
+                    "perspective(1200px) translateX(150px) translateY(0px) scale(1) rotate(0deg) translateZ(0)",
+                }}
               >
                 <div
                   className="meme-3izsog"
@@ -562,7 +646,7 @@ export default function Home() {
                     </span>
                   </p>
                 </div>
-              </div>
+              </motion.div>
               <div
                 className="meme-7ctrfu"
                 data-meme-component-type="RichTextContainer"
@@ -597,16 +681,35 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-              <div
+              <motion.div
+              initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: -150 }}
+      animate={{
+        opacity: 1,
+        rotate: 0,
+        rotateX: 0,
+        rotateY: 0,
+        scale: 1,
+        x: 0,
+        y: 0,
+        transition: {
+          damping: 30,
+          delay: 0.3,
+          mass: 1.3,
+          stiffness: 400,
+          type: "spring",
+        },
+        transformTemplate: (props) =>
+          `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+      }}
                 className="meme-l1b9xh"
                 data-meme-appear-id="l1b9xh"
                 data-meme-name="pngwing 1"
                 name="pngwing 1"
                 style={
                   {
-                    // opacity: "0.001",
-                    // transform:
-                    //   "perspective(1200px) translateX(0px)                  translateY(-150px) scale(1) rotate(0deg) translateZ(0)",
+                    opacity: "0.001",
+                    transform:
+                      "perspective(1200px) translateX(0px) translateY(-150px) scale(1) rotate(0deg) translateZ(0)",
                   }
                 }
               >
@@ -639,7 +742,7 @@ export default function Home() {
                     }}
                   />
                 </div>
-              </div>
+              </motion.div>
               <div
                 className="meme-1ggzn9u"
                 data-meme-component-type="RichTextContainer"
@@ -739,7 +842,7 @@ export default function Home() {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
             <div className="meme-bynxlw" data-meme-name="M 1" name="M 1">
               <div
                 data-meme-background-image-wrapper="true"
@@ -1075,7 +1178,7 @@ export default function Home() {
                   // opacity: "0",
                   // outline: "none",
                   // transform:
-                  //   "perspective(1200px) translateX(-50%) translateX(-150px)                translateY(0px) scale(1) rotate(0deg) rotateX(0deg)                rotateY(0deg) translateZ(0)",
+                  //   "perspective(1200px) translateX(-50%) translateX(-150px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0)",
                 }
               }
             >
@@ -2447,7 +2550,7 @@ export default function Home() {
               data-meme-component-type="SVG"
               data-meme-name="Top Icons"
               data-meme-page-link-current="true"
-              href="index.html"
+              href="/"
               name="Top Icons"
               style={{
                 color: "rgba(0, 0, 0, 1)",
@@ -3235,15 +3338,33 @@ export default function Home() {
                 imageRendering: "pixelated",
               }}
             />
-            <div
+            <motion.div
+             initial={{ opacity: 0.001, rotate: 0, scale: 1, x: 0, y: 0 }}
+      animate={{
+        opacity: 1,
+        rotate: 0,
+        rotateX: 0,
+        rotateY: 0,
+        scale: 1,
+        x: 0,
+        y: 0,
+        transition: {
+          delay: 0,
+          duration: 0.3,
+          ease: [0.44, 0, 0, 1],
+          type: "tween",
+        },
+        transformTemplate: (props) =>
+          `perspective(1200px) ${props.__Appear_Animation_Transform__}`,
+      }}
               className="meme-2fhafs"
               data-meme-appear-id="2fhafs"
               data-meme-name="TIme Fframe"
               name="TIme Fframe"
               style={
                 {
-                  // opacity: "0.001",
-                  // transform: "perspective(1200px)",
+                  opacity: "0.001",
+                  transform: "perspective(1200px)",
                 }
               }
             >
@@ -3425,7 +3546,7 @@ export default function Home() {
                   </span>
                 </p>
               </div>
-            </div>
+            </motion.div>
             <div
               className="meme-vmun0p"
               data-meme-name="Raydium"
