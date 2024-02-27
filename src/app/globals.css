@@ -1,0 +1,3848 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+html,
+body,
+#main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+}
+body,
+input,
+textarea,
+select,
+button {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+#__framer-badge-container {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  pointer-events: none;
+  z-index: 314159;
+}
+.__framer-badge {
+  pointer-events: auto;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwaPGR_p.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwaPGR_p.woff2)
+    format("woff2");
+  unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F,
+    U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F,
+    U+A720-A7FF;
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50XSwiPGQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Luckiest Guy;
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/luckiestguy/v22/_gP_1RrxsjcxVyin9l9n_j2hTd52.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: Lato Placeholder;
+  src: local("Arial");
+  ascent-override: 100.88%;
+  descent-override: 21.77%;
+  line-gap-override: 0%;
+  size-adjust: 97.84%;
+}
+@font-face {
+  font-family: Inter Placeholder;
+  src: local("Arial");
+  ascent-override: 90%;
+  descent-override: 22.43%;
+  line-gap-override: 0%;
+  size-adjust: 107.64%;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.cyrillic-ext-BHDA65O4.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.cyrillic-Q5IXHU2O.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.greek-ext-VVOQA2NE.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.greek-E3WNEUH6.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.latin-ext-5RC4NRHN.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.latin-GJ7CRGHG.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-Thin.vietnamese-Z3Y7DPWO.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.cyrillic-ext-7NWKXNAT.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.cyrillic-IBWUD6RJ.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.greek-ext-HUMDTRBU.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.greek-ZLLHEEN3.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.latin-ext-72JE5FGU.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.latin-2JHDAFAQ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLight.vietnamese-VKRCA4VC.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.cyrillic-ext-G3OTPKE4.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.cyrillic-JO7ZJTP6.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.greek-ext-N63XCCK3.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.greek-5GVUXSXZ.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.latin-ext-RREJIMQ3.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.latin-EKF76FXR.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-Light.vietnamese-GVC2UOFS.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.cyrillic-ext-CFTLRB35.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.cyrillic-KKLZBALH.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.greek-ext-ULEBLIFV.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.greek-IRHSNFQB.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.latin-ext-VZDUGU3Q.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.latin-JLQMKCHE.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Regular.vietnamese-QK7VSWXK.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.cyrillic-ext-M4WHNGTS.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.cyrillic-JVU2PANX.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.greek-ext-4KCQBEIZ.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.greek-DPOQGN7L.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.latin-ext-J4DBSW7F.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.latin-Y3IVPL46.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-Medium.vietnamese-PJV76O4P.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.cyrillic-ext-C7KWUKA7.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.cyrillic-JWV7SOZ6.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.greek-ext-FBKSFTSU.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.greek-EQ3PSENU.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.latin-ext-ULRSO3ZR.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.latin-RDYY2AG2.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBold.vietnamese-ESQNSEQ3.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.cyrillic-ext-XOTVL7ZR.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.cyrillic-6LOMBC2V.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.greek-ext-WXWSJXLB.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.greek-YRST7ODZ.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.latin-ext-BASA5UL3.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.latin-UCM45LQF.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-Bold.vietnamese-OEVJMXEP.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.cyrillic-ext-7Q6SVIPE.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.cyrillic-JSLPE6KW.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.greek-ext-6OYGJJV7.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.greek-SHW2FPC4.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.latin-ext-A5DUFOP6.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.latin-OW4UGSRU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBold.vietnamese-IBBC7NGV.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.cyrillic-ext-TU4ITVTR.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.cyrillic-JX7CGTYD.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.greek-ext-LS3GCBFI.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.greek-ZWCJHBP5.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.latin-ext-BZLEUMX6.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.latin-TETRYDF7.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-Black.vietnamese-RXQCC3EJ.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.cyrillic-ext-2RGKWUBV.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.cyrillic-TDYIP5HV.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.greek-ext-WR4TIDYZ.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.greek-V3WZMSP7.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.latin-ext-TXFTJONQ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.latin-RVEBKP6O.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 100;
+  src: url(https://app.framerstatic.com/Inter-ThinItalic.vietnamese-WCBPP4MD.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.cyrillic-ext-OVCHMVPD.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.cyrillic-BRDZE5UH.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.greek-ext-YV64YFFH.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.greek-EJVCLASM.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.latin-ext-2MHTM56A.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.latin-JB3CJMMM.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 200;
+  src: url(https://app.framerstatic.com/Inter-ExtraLightItalic.vietnamese-3EJ3IQYS.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.cyrillic-ext-C2S5XS3D.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.cyrillic-E7CYPW5D.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.greek-ext-ROSAFPGE.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.greek-PAWWH37Z.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.latin-ext-N2Z67Z45.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.latin-SLSTLWEU.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 300;
+  src: url(https://app.framerstatic.com/Inter-LightItalic.vietnamese-RLGM2D3Y.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.cyrillic-ext-YDGMJOJO.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.cyrillic-BFOVMAQB.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.greek-ext-4KOU3AHC.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.greek-OJTBJNE6.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.latin-ext-H4B22QN6.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.latin-2DWX32EN.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 400;
+  src: url(https://app.framerstatic.com/Inter-Italic.vietnamese-TYMT6CKW.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.cyrillic-ext-QYBZQ2NF.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.cyrillic-ZHAJHZCC.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.greek-ext-W5ABYGZR.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.greek-RGNSYVNV.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.latin-ext-7DZEPSAS.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.latin-SKPQAMBJ.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 500;
+  src: url(https://app.framerstatic.com/Inter-MediumItalic.vietnamese-23WIFZV7.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.cyrillic-ext-MEHHCDC3.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.cyrillic-YACNRNDE.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.greek-ext-GFL7KADI.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.greek-5W77OPRT.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.latin-ext-OYJJ2W6R.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.latin-KBLJMBDH.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 600;
+  src: url(https://app.framerstatic.com/Inter-SemiBoldItalic.vietnamese-5ZFOV65G.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.cyrillic-ext-PEYDHC3S.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.cyrillic-7EIL6JWG.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.greek-ext-3DJOYQMH.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.greek-TJBTLTT7.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.latin-ext-FVPCPRBJ.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.latin-5ZFQS4XK.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 700;
+  src: url(https://app.framerstatic.com/Inter-BoldItalic.vietnamese-W2625PGF.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.cyrillic-ext-ACWDZ3VD.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.cyrillic-ZKBSDAI2.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.greek-ext-3CY5DPTP.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.greek-YL5CC63W.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.latin-ext-7IZFJI4D.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.latin-O5HH4IX3.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: swap;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 800;
+  src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic.vietnamese-UW3XUJOD.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.cyrillic-ext-TRM4ITYR.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+    U+A640-A69F, U+FE2E-FE2F;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.cyrillic-FPHIQVZS.woff2)
+    format("woff2");
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.greek-ext-JTGUUSP5.woff2)
+    format("woff2");
+  unicode-range: U+1F00-1FFF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.greek-LUNA3RFO.woff2)
+    format("woff2");
+  unicode-range: U+0370-03FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.latin-ext-KU7ICFYH.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.latin-FRVXWQSB.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+    U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: italic;
+  font-weight: 900;
+  src: url(https://app.framerstatic.com/Inter-BlackItalic.vietnamese-2Q7MQKJX.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+    U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+[data-meme-component-type] {
+  position: absolute;
+}
+[data-meme-component-type="Text"] {
+  cursor: inherit;
+}
+[data-meme-component-text-autosized] * {
+  white-space: pre;
+}
+[data-meme-component-type="Text"] > * {
+  text-align: var(--meme-text-alignment, start);
+}
+[data-meme-component-type="Text"] span span,
+[data-meme-component-type="Text"] p span,
+[data-meme-component-type="Text"] h1 span,
+[data-meme-component-type="Text"] h2 span,
+[data-meme-component-type="Text"] h3 span,
+[data-meme-component-type="Text"] h4 span,
+[data-meme-component-type="Text"] h5 span,
+[data-meme-component-type="Text"] h6 span {
+  display: block;
+}
+[data-meme-component-type="Text"] span span span,
+[data-meme-component-type="Text"] p span span,
+[data-meme-component-type="Text"] h1 span span,
+[data-meme-component-type="Text"] h2 span span,
+[data-meme-component-type="Text"] h3 span span,
+[data-meme-component-type="Text"] h4 span span,
+[data-meme-component-type="Text"] h5 span span,
+[data-meme-component-type="Text"] h6 span span {
+  display: unset;
+}
+[data-meme-component-type="Text"] div div span,
+[data-meme-component-type="Text"] a div span,
+[data-meme-component-type="Text"] span span span,
+[data-meme-component-type="Text"] p span span,
+[data-meme-component-type="Text"] h1 span span,
+[data-meme-component-type="Text"] h2 span span,
+[data-meme-component-type="Text"] h3 span span,
+[data-meme-component-type="Text"] h4 span span,
+[data-meme-component-type="Text"] h5 span span,
+[data-meme-component-type="Text"] h6 span span,
+[data-meme-component-type="Text"] a {
+  font-family: var(--font-family);
+  font-style: var(--font-style);
+  font-weight: min(
+    calc(var(--meme-font-weight-increase, 0) + var(--font-weight, 400)),
+    900
+  );
+  color: var(--text-color);
+  letter-spacing: var(--letter-spacing);
+  font-size: var(--font-size);
+  text-transform: var(--text-transform);
+  text-decoration: var(--text-decoration);
+  line-height: var(--line-height);
+}
+[data-meme-component-type="Text"] div div span,
+[data-meme-component-type="Text"] a div span,
+[data-meme-component-type="Text"] span span span,
+[data-meme-component-type="Text"] p span span,
+[data-meme-component-type="Text"] h1 span span,
+[data-meme-component-type="Text"] h2 span span,
+[data-meme-component-type="Text"] h3 span span,
+[data-meme-component-type="Text"] h4 span span,
+[data-meme-component-type="Text"] h5 span span,
+[data-meme-component-type="Text"] h6 span span,
+[data-meme-component-type="Text"] a {
+  --font-family: var(--meme-font-family);
+  --font-style: var(--meme-font-style);
+  --font-weight: var(--meme-font-weight);
+  --text-color: var(--meme-text-color);
+  --letter-spacing: var(--meme-letter-spacing);
+  --font-size: var(--meme-font-size);
+  --text-transform: var(--meme-text-transform);
+  --text-decoration: var(--meme-text-decoration);
+  --line-height: var(--meme-line-height);
+}
+[data-meme-component-type="Text"] a,
+[data-meme-component-type="Text"] a div span,
+[data-meme-component-type="Text"] a span span span,
+[data-meme-component-type="Text"] a p span span,
+[data-meme-component-type="Text"] a h1 span span,
+[data-meme-component-type="Text"] a h2 span span,
+[data-meme-component-type="Text"] a h3 span span,
+[data-meme-component-type="Text"] a h4 span span,
+[data-meme-component-type="Text"] a h5 span span,
+[data-meme-component-type="Text"] a h6 span span {
+  --font-family: var(
+    --meme-link-font-family,
+    var(--meme-font-family)
+  );
+  --font-style: var(--meme-link-font-style, var(--meme-font-style));
+  --font-weight: var(
+    --meme-link-font-weight,
+    var(--meme-font-weight)
+  );
+  --text-color: var(--meme-link-text-color, var(--meme-text-color));
+  --font-size: var(--meme-link-font-size, var(--meme-font-size));
+  --text-transform: var(
+    --meme-link-text-transform,
+    var(--meme-text-transform)
+  );
+  --text-decoration: var(
+    --meme-link-text-decoration,
+    var(--meme-text-decoration)
+  );
+}
+[data-meme-component-type="Text"] a:hover,
+[data-meme-component-type="Text"] a div span:hover,
+[data-meme-component-type="Text"] a span span span:hover,
+[data-meme-component-type="Text"] a p span span:hover,
+[data-meme-component-type="Text"] a h1 span span:hover,
+[data-meme-component-type="Text"] a h2 span span:hover,
+[data-meme-component-type="Text"] a h3 span span:hover,
+[data-meme-component-type="Text"] a h4 span span:hover,
+[data-meme-component-type="Text"] a h5 span span:hover,
+[data-meme-component-type="Text"] a h6 span span:hover {
+  --font-family: var(
+    --meme-link-hover-font-family,
+    var(--meme-link-font-family, var(--meme-font-family))
+  );
+  --font-style: var(
+    --meme-link-hover-font-style,
+    var(--meme-link-font-style, var(--meme-font-style))
+  );
+  --font-weight: var(
+    --meme-link-hover-font-weight,
+    var(--meme-link-font-weight, var(--meme-font-weight))
+  );
+  --text-color: var(
+    --meme-link-hover-text-color,
+    var(--meme-link-text-color, var(--meme-text-color))
+  );
+  --font-size: var(
+    --meme-link-hover-font-size,
+    var(--meme-link-font-size, var(--meme-font-size))
+  );
+  --text-transform: var(
+    --meme-link-hover-text-transform,
+    var(--meme-link-text-transform, var(--meme-text-transform))
+  );
+  --text-decoration: var(
+    --meme-link-hover-text-decoration,
+    var(--meme-link-text-decoration, var(--meme-text-decoration))
+  );
+}
+[data-meme-component-type="Text"].isCurrent a,
+[data-meme-component-type="Text"].isCurrent a div span,
+[data-meme-component-type="Text"].isCurrent a span span span,
+[data-meme-component-type="Text"].isCurrent a p span span,
+[data-meme-component-type="Text"].isCurrent a h1 span span,
+[data-meme-component-type="Text"].isCurrent a h2 span span,
+[data-meme-component-type="Text"].isCurrent a h3 span span,
+[data-meme-component-type="Text"].isCurrent a h4 span span,
+[data-meme-component-type="Text"].isCurrent a h5 span span,
+[data-meme-component-type="Text"].isCurrent a h6 span span {
+  --font-family: var(
+    --meme-link-current-font-family,
+    var(--meme-link-font-family, var(--meme-font-family))
+  );
+  --font-style: var(
+    --meme-link-current-font-style,
+    var(--meme-link-font-style, var(--meme-font-style))
+  );
+  --font-weight: var(
+    --meme-link-current-font-weight,
+    var(--meme-link-font-weight, var(--meme-font-weight))
+  );
+  --text-color: var(
+    --meme-link-current-text-color,
+    var(--meme-link-text-color, var(--meme-text-color))
+  );
+  --font-size: var(
+    --meme-link-current-font-size,
+    var(--meme-link-font-size, var(--meme-font-size))
+  );
+  --text-transform: var(
+    --meme-link-current-text-transform,
+    var(--meme-link-text-transform, var(--meme-text-transform))
+  );
+  --text-decoration: var(
+    --meme-link-current-text-decoration,
+    var(--meme-link-text-decoration, var(--meme-text-decoration))
+  );
+}
+p.meme-text,
+div.meme-text,
+h1.meme-text,
+h2.meme-text,
+h3.meme-text,
+h4.meme-text,
+h5.meme-text,
+h6.meme-text,
+ol.meme-text,
+ul.meme-text {
+  margin: 0;
+  padding: 0;
+}
+p.meme-text,
+div.meme-text,
+h1.meme-text,
+h2.meme-text,
+h3.meme-text,
+h4.meme-text,
+h5.meme-text,
+h6.meme-text,
+li.meme-text,
+ol.meme-text,
+ul.meme-text,
+span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-font-family,
+    Inter,
+    Inter Placeholder,
+    sans-serif
+  );
+  font-style: var(--meme-font-style, normal);
+  font-weight: var(--meme-font-weight, 400);
+  color: var(--meme-text-color, #000);
+  font-size: calc(
+    var(--meme-font-size, 16px) * var(--meme-font-size-scale, 1)
+  );
+  letter-spacing: var(--meme-letter-spacing, 0);
+  text-transform: var(--meme-text-transform, none);
+  text-decoration: var(--meme-text-decoration, none);
+  line-height: var(--meme-line-height, 1.2em);
+  text-align: var(--meme-text-alignment, start);
+}
+.meme-fit-text .meme-text {
+  white-space: nowrap;
+}
+strong.meme-text {
+  font-family: var(--meme-font-family-bold);
+  font-style: var(--meme-font-style-bold);
+  font-weight: var(--meme-font-weight-bold, bolder);
+}
+em.meme-text {
+  font-family: var(--meme-font-family-italic);
+  font-style: var(--meme-font-style-italic, italic);
+  font-weight: var(--meme-font-weight-italic);
+}
+em.meme-text > strong.meme-text {
+  font-family: var(--meme-font-family-bold-italic);
+  font-style: var(--meme-font-style-bold-italic, italic);
+  font-weight: var(--meme-font-weight-bold-italic, bolder);
+}
+p.meme-text:not(:first-child),
+div.meme-text:not(:first-child),
+h1.meme-text:not(:first-child),
+h2.meme-text:not(:first-child),
+h3.meme-text:not(:first-child),
+h4.meme-text:not(:first-child),
+h5.meme-text:not(:first-child),
+h6.meme-text:not(:first-child),
+ol.meme-text:not(:first-child),
+ul.meme-text:not(:first-child),
+.meme-image.meme-text:not(:first-child) {
+  margin-top: var(--meme-paragraph-spacing, 0);
+}
+li.meme-text > ul.meme-text:nth-child(2),
+li.meme-text > ol.meme-text:nth-child(2) {
+  margin-top: 0;
+}
+.meme-text[data-text-fill] {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: max(
+    0em,
+    calc(calc(1.3em - var(--meme-line-height, 1.3em)) / 2)
+  );
+  margin: min(
+    0em,
+    calc(calc(1.3em - var(--meme-line-height, 1.3em)) / -2)
+  );
+}
+code.meme-text,
+code.meme-text span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-code-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-code-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-code-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(--meme-code-text-color, var(--meme-text-color, #000));
+  font-size: calc(
+    var(--meme-font-size, 16px) * var(--meme-font-size-scale, 1)
+  );
+  letter-spacing: var(--meme-letter-spacing, 0);
+  line-height: var(--meme-line-height, 1.2em);
+}
+a.meme-text,
+a.meme-text span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-link-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-link-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(--meme-link-text-color, var(--meme-text-color, #000));
+  font-size: calc(
+    var(--meme-link-font-size, var(--meme-font-size, 16px)) *
+      var(--meme-font-size-scale, 1)
+  );
+  text-transform: var(
+    --meme-link-text-transform,
+    var(--meme-text-transform, none)
+  );
+  text-decoration: var(
+    --meme-link-text-decoration,
+    var(--meme-text-decoration, none)
+  );
+  cursor: var(--meme-custom-cursors, pointer);
+}
+code.meme-text a.meme-text,
+code.meme-text a.meme-text span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-code-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-code-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-code-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(
+    --meme-link-text-color,
+    var(--meme-code-text-color, var(--meme-text-color, #000))
+  );
+  font-size: calc(
+    var(--meme-link-font-size, var(--meme-font-size, 16px)) *
+      var(--meme-font-size-scale, 1)
+  );
+}
+a.meme-text:hover,
+a.meme-text:hover span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-hover-font-family,
+    var(
+      --meme-link-font-family,
+      var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+    )
+  );
+  font-style: var(
+    --meme-link-hover-font-style,
+    var(--meme-link-font-style, var(--meme-font-style, normal))
+  );
+  font-weight: var(
+    --meme-link-hover-font-weight,
+    var(--meme-link-font-weight, var(--meme-font-weight, 400))
+  );
+  color: var(
+    --meme-link-hover-text-color,
+    var(--meme-link-text-color, var(--meme-text-color, #000))
+  );
+  font-size: calc(
+    var(
+        --meme-link-hover-font-size,
+        var(--meme-link-font-size, var(--meme-font-size, 16px))
+      ) * var(--meme-font-size-scale, 1)
+  );
+  text-transform: var(
+    --meme-link-hover-text-transform,
+    var(--meme-link-text-transform, var(--meme-text-transform, none))
+  );
+  text-decoration: var(
+    --meme-link-hover-text-decoration,
+    var(
+      --meme-link-text-decoration,
+      var(--meme-text-decoration, none)
+    )
+  );
+}
+code.meme-text a.meme-text:hover,
+code.meme-text
+  a.meme-text:hover
+  span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-code-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-code-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-code-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(
+    --meme-link-hover-text-color,
+    var(
+      --meme-link-text-color,
+      var(--meme-code-text-color, var(--meme-text-color, #000))
+    )
+  );
+  font-size: calc(
+    var(
+        --meme-link-hover-font-size,
+        var(--meme-link-font-size, var(--meme-font-size, 16px))
+      ) * var(--meme-font-size-scale, 1)
+  );
+}
+a.meme-text[data-meme-page-link-current],
+a.meme-text[data-meme-page-link-current]
+  span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-current-font-family,
+    var(
+      --meme-link-font-family,
+      var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+    )
+  );
+  font-style: var(
+    --meme-link-current-font-style,
+    var(--meme-link-font-style, var(--meme-font-style, normal))
+  );
+  font-weight: var(
+    --meme-link-current-font-weight,
+    var(--meme-link-font-weight, var(--meme-font-weight, 400))
+  );
+  color: var(
+    --meme-link-current-text-color,
+    var(--meme-link-text-color, var(--meme-text-color, #000))
+  );
+  font-size: calc(
+    var(
+        --meme-link-current-font-size,
+        var(--meme-link-font-size, var(--meme-font-size, 16px))
+      ) * var(--meme-font-size-scale, 1)
+  );
+  text-transform: var(
+    --meme-link-current-text-transform,
+    var(--meme-link-text-transform, var(--meme-text-transform, none))
+  );
+  text-decoration: var(
+    --meme-link-current-text-decoration,
+    var(
+      --meme-link-text-decoration,
+      var(--meme-text-decoration, none)
+    )
+  );
+}
+code.meme-text a.meme-text[data-meme-page-link-current],
+code.meme-text
+  a.meme-text[data-meme-page-link-current]
+  span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-code-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-code-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-code-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(
+    --meme-link-current-text-color,
+    var(
+      --meme-link-text-color,
+      var(--meme-code-text-color, var(--meme-text-color, #000))
+    )
+  );
+  font-size: calc(
+    var(
+        --meme-link-current-font-size,
+        var(--meme-link-font-size, var(--meme-font-size, 16px))
+      ) * var(--meme-font-size-scale, 1)
+  );
+}
+a.meme-text[data-meme-page-link-current]:hover,
+a.meme-text[data-meme-page-link-current]:hover
+  span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-hover-font-family,
+    var(
+      --meme-link-current-font-family,
+      var(
+        --meme-link-font-family,
+        var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+      )
+    )
+  );
+  font-style: var(
+    --meme-link-hover-font-style,
+    var(
+      --meme-link-current-font-style,
+      var(--meme-link-font-style, var(--meme-font-style, normal))
+    )
+  );
+  font-weight: var(
+    --meme-link-hover-font-weight,
+    var(
+      --meme-link-current-font-weight,
+      var(--meme-link-font-weight, var(--meme-font-weight, 400))
+    )
+  );
+  color: var(
+    --meme-link-hover-text-color,
+    var(
+      --meme-link-current-text-color,
+      var(--meme-link-text-color, var(--meme-text-color, #000))
+    )
+  );
+  font-size: calc(
+    var(
+        --meme-link-hover-font-size,
+        var(
+          --meme-link-current-font-size,
+          var(--meme-link-font-size, var(--meme-font-size, 16px))
+        )
+      ) * var(--meme-font-size-scale, 1)
+  );
+  text-transform: var(
+    --meme-link-hover-text-transform,
+    var(
+      --meme-link-current-text-transform,
+      var(
+        --meme-link-text-transform,
+        var(--meme-text-transform, none)
+      )
+    )
+  );
+  text-decoration: var(
+    --meme-link-hover-text-decoration,
+    var(
+      --meme-link-current-text-decoration,
+      var(
+        --meme-link-text-decoration,
+        var(--meme-text-decoration, none)
+      )
+    )
+  );
+}
+code.meme-text a.meme-text[data-meme-page-link-current]:hover,
+code.meme-text
+  a.meme-text[data-meme-page-link-current]:hover
+  span.meme-text:not([data-text-fill]) {
+  font-family: var(
+    --meme-code-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-code-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-code-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(
+    --meme-link-hover-text-color,
+    var(
+      --meme-link-current-text-color,
+      var(
+        --meme-link-text-color,
+        var(--meme-code-text-color, var(--meme-text-color, #000))
+      )
+    )
+  );
+  font-size: calc(
+    var(
+        --meme-link-hover-font-size,
+        var(
+          --meme-link-current-font-size,
+          var(--meme-link-font-size, var(--meme-font-size, 16px))
+        )
+      ) * var(--meme-font-size-scale, 1)
+  );
+}
+.meme-image.meme-text {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.text-styles-preset-reset.meme-text {
+  --meme-font-family: Inter, Inter Placeholder, sans-serif;
+  --meme-font-style: normal;
+  --meme-font-weight: 500;
+  --meme-text-color: #000;
+  --meme-font-size: 16px;
+  --meme-letter-spacing: 0;
+  --meme-text-transform: none;
+  --meme-text-decoration: none;
+  --meme-line-height: 1.2em;
+  --meme-text-alignment: start;
+}
+ol.meme-text {
+  --list-style-type: decimal;
+}
+ul.meme-text,
+ol.meme-text {
+  display: table;
+  width: 100%;
+}
+li.meme-text {
+  display: table-row;
+  counter-increment: list-item;
+  list-style: none;
+}
+ol.meme-text > li.meme-text:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-inline-end: 0.75ch;
+  content: counter(list-item, var(--list-style-type)) ".";
+  white-space: nowrap;
+}
+ul.meme-text > li.meme-text:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-inline-end: 0.75ch;
+  content: "\2022";
+}
+.meme-text-module[style*="aspect-ratio"] > :first-child {
+  width: 100%;
+}
+@supports not (aspect-ratio: 1) {
+  .meme-text-module[style*="aspect-ratio"] {
+    position: relative;
+  }
+}
+@supports not (aspect-ratio: 1) {
+  .meme-text-module[style*="aspect-ratio"]:before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / calc(var(--aspect-ratio)));
+  }
+}
+@supports not (aspect-ratio: 1) {
+  .meme-text-module[style*="aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+[data-meme-component-type="DeprecatedRichText"] {
+  cursor: inherit;
+}
+[data-meme-component-type="DeprecatedRichText"]
+  .text-styles-preset-reset {
+  --meme-font-family: Inter, Inter Placeholder, sans-serif;
+  --meme-font-style: normal;
+  --meme-font-weight: 500;
+  --meme-text-color: #000;
+  --meme-font-size: 16px;
+  --meme-letter-spacing: 0;
+  --meme-text-transform: none;
+  --meme-text-decoration: none;
+  --meme-line-height: 1.2em;
+  --meme-text-alignment: start;
+}
+[data-meme-component-type="DeprecatedRichText"] p,
+[data-meme-component-type="DeprecatedRichText"] div,
+[data-meme-component-type="DeprecatedRichText"] h1,
+[data-meme-component-type="DeprecatedRichText"] h2,
+[data-meme-component-type="DeprecatedRichText"] h3,
+[data-meme-component-type="DeprecatedRichText"] h4,
+[data-meme-component-type="DeprecatedRichText"] h5,
+[data-meme-component-type="DeprecatedRichText"] h6 {
+  margin: 0;
+  padding: 0;
+}
+[data-meme-component-type="DeprecatedRichText"] p,
+[data-meme-component-type="DeprecatedRichText"] div,
+[data-meme-component-type="DeprecatedRichText"] h1,
+[data-meme-component-type="DeprecatedRichText"] h2,
+[data-meme-component-type="DeprecatedRichText"] h3,
+[data-meme-component-type="DeprecatedRichText"] h4,
+[data-meme-component-type="DeprecatedRichText"] h5,
+[data-meme-component-type="DeprecatedRichText"] h6,
+[data-meme-component-type="DeprecatedRichText"] li,
+[data-meme-component-type="DeprecatedRichText"] ol,
+[data-meme-component-type="DeprecatedRichText"] ul,
+[data-meme-component-type="DeprecatedRichText"]
+  span:not([data-text-fill]) {
+  font-family: var(
+    --meme-font-family,
+    Inter,
+    Inter Placeholder,
+    sans-serif
+  );
+  font-style: var(--meme-font-style, normal);
+  font-weight: var(--meme-font-weight, 400);
+  color: var(--meme-text-color, #000);
+  font-size: var(--meme-font-size, 16px);
+  letter-spacing: var(--meme-letter-spacing, 0);
+  text-transform: var(--meme-text-transform, none);
+  text-decoration: var(--meme-text-decoration, none);
+  line-height: var(--meme-line-height, 1.2em);
+  text-align: var(--meme-text-alignment, start);
+}
+[data-meme-component-type="DeprecatedRichText"] p:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] div:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] h1:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] h2:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] h3:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] h4:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] h5:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] h6:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] ol:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"] ul:not(:first-child),
+[data-meme-component-type="DeprecatedRichText"]
+  .meme-image:not(:first-child) {
+  margin-top: var(--meme-paragraph-spacing, 0);
+}
+[data-meme-component-type="DeprecatedRichText"] span[data-text-fill] {
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+[data-meme-component-type="DeprecatedRichText"] a,
+[data-meme-component-type="DeprecatedRichText"]
+  a
+  span:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-font-family,
+    var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+  );
+  font-style: var(
+    --meme-link-font-style,
+    var(--meme-font-style, normal)
+  );
+  font-weight: var(
+    --meme-link-font-weight,
+    var(--meme-font-weight, 400)
+  );
+  color: var(--meme-link-text-color, var(--meme-text-color, #000));
+  font-size: var(--meme-link-font-size, var(--meme-font-size, 16px));
+  text-transform: var(
+    --meme-link-text-transform,
+    var(--meme-text-transform, none)
+  );
+  text-decoration: var(
+    --meme-link-text-decoration,
+    var(--meme-text-decoration, none)
+  );
+}
+[data-meme-component-type="DeprecatedRichText"] a:hover,
+[data-meme-component-type="DeprecatedRichText"]
+  a:hover
+  span:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-hover-font-family,
+    var(
+      --meme-link-font-family,
+      var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+    )
+  );
+  font-style: var(
+    --meme-link-hover-font-style,
+    var(--meme-link-font-style, var(--meme-font-style, normal))
+  );
+  font-weight: var(
+    --meme-link-hover-font-weight,
+    var(--meme-link-font-weight, var(--meme-font-weight, 400))
+  );
+  color: var(
+    --meme-link-hover-text-color,
+    var(--meme-link-text-color, var(--meme-text-color, #000))
+  );
+  font-size: var(
+    --meme-link-hover-font-size,
+    var(--meme-link-font-size, var(--meme-font-size, 16px))
+  );
+  text-transform: var(
+    --meme-link-hover-text-transform,
+    var(--meme-link-text-transform, var(--meme-text-transform, none))
+  );
+  text-decoration: var(
+    --meme-link-hover-text-decoration,
+    var(
+      --meme-link-text-decoration,
+      var(--meme-text-decoration, none)
+    )
+  );
+}
+a[data-meme-page-link-current],
+a[data-meme-page-link-current] span:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-current-font-family,
+    var(
+      --meme-link-font-family,
+      var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+    )
+  );
+  font-style: var(
+    --meme-link-current-font-style,
+    var(--meme-link-font-style, var(--meme-font-style, normal))
+  );
+  font-weight: var(
+    --meme-link-current-font-weight,
+    var(--meme-link-font-weight, var(--meme-font-weight, 400))
+  );
+  color: var(
+    --meme-link-current-text-color,
+    var(--meme-link-text-color, var(--meme-text-color, #000))
+  );
+  font-size: var(
+    --meme-link-current-font-size,
+    var(--meme-link-font-size, var(--meme-font-size, 16px))
+  );
+  text-transform: var(
+    --meme-link-current-text-transform,
+    var(--meme-link-text-transform, var(--meme-text-transform, none))
+  );
+  text-decoration: var(
+    --meme-link-current-text-decoration,
+    var(
+      --meme-link-text-decoration,
+      var(--meme-text-decoration, none)
+    )
+  );
+}
+a[data-meme-page-link-current]:hover,
+a[data-meme-page-link-current]:hover span:not([data-text-fill]) {
+  font-family: var(
+    --meme-link-hover-font-family,
+    var(
+      --meme-link-current-font-family,
+      var(
+        --meme-link-font-family,
+        var(--meme-font-family, Inter, Inter Placeholder, sans-serif)
+      )
+    )
+  );
+  font-style: var(
+    --meme-link-hover-font-style,
+    var(
+      --meme-link-current-font-style,
+      var(--meme-link-font-style, var(--meme-font-style, normal))
+    )
+  );
+  font-weight: var(
+    --meme-link-hover-font-weight,
+    var(
+      --meme-link-current-font-weight,
+      var(--meme-link-font-weight, var(--meme-font-weight, 400))
+    )
+  );
+  color: var(
+    --meme-link-hover-text-color,
+    var(
+      --meme-link-current-text-color,
+      var(--meme-link-text-color, var(--meme-text-color, #000))
+    )
+  );
+  font-size: var(
+    --meme-link-hover-font-size,
+    var(
+      --meme-link-current-font-size,
+      var(--meme-link-font-size, var(--meme-font-size, 16px))
+    )
+  );
+  text-transform: var(
+    --meme-link-hover-text-transform,
+    var(
+      --meme-link-current-text-transform,
+      var(
+        --meme-link-text-transform,
+        var(--meme-text-transform, none)
+      )
+    )
+  );
+  text-decoration: var(
+    --meme-link-hover-text-decoration,
+    var(
+      --meme-link-current-text-decoration,
+      var(
+        --meme-link-text-decoration,
+        var(--meme-text-decoration, none)
+      )
+    )
+  );
+}
+[data-meme-component-type="DeprecatedRichText"] strong {
+  font-weight: bolder;
+}
+[data-meme-component-type="DeprecatedRichText"] em {
+  font-style: italic;
+}
+[data-meme-component-type="DeprecatedRichText"] .meme-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+[data-meme-component-type="DeprecatedRichText"] ul,
+[data-meme-component-type="DeprecatedRichText"] ol {
+  display: table;
+  width: 100%;
+  padding-left: 0;
+  margin: 0;
+}
+[data-meme-component-type="DeprecatedRichText"] li {
+  display: table-row;
+  counter-increment: list-item;
+  list-style: none;
+}
+[data-meme-component-type="DeprecatedRichText"] ol > li:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: counter(list-item) ".";
+  white-space: nowrap;
+}
+[data-meme-component-type="DeprecatedRichText"] ul > li:before {
+  display: table-cell;
+  width: 2.25ch;
+  box-sizing: border-box;
+  padding-right: 0.75ch;
+  content: "\2022";
+}
+:not([data-meme-generated]) > [data-meme-stack-content-wrapper] > *,
+:not([data-meme-generated])
+  > [data-meme-stack-content-wrapper]
+  > [data-meme-component-type],
+:not([data-meme-generated])
+  > [data-meme-stack-content-wrapper]
+  > [data-meme-legacy-stack-gap-enabled]
+  > *,
+:not([data-meme-generated])
+  > [data-meme-stack-content-wrapper]
+  > [data-meme-legacy-stack-gap-enabled]
+  > [data-meme-component-type] {
+  position: relative;
+}
+.flexbox-gap-not-supported
+  [data-meme-legacy-stack-gap-enabled="true"]
+  > *,
+[data-meme-legacy-stack-gap-enabled="true"][data-meme-stack-flexbox-gap="false"] {
+  margin-top: calc(var(--stack-gap-y) / 2);
+  margin-bottom: calc(var(--stack-gap-y) / 2);
+  margin-right: calc(var(--stack-gap-x) / 2);
+  margin-left: calc(var(--stack-gap-x) / 2);
+}
+[data-meme-stack-content-wrapper][data-meme-stack-gap-enabled="true"] {
+  row-gap: var(--stack-native-row-gap);
+  column-gap: var(--stack-native-column-gap);
+}
+.flexbox-gap-not-supported
+  [data-meme-stack-content-wrapper][data-meme-stack-gap-enabled="true"] {
+  row-gap: unset;
+  column-gap: unset;
+}
+.flexbox-gap-not-supported
+  [data-meme-stack-direction-reverse="false"]
+  [data-meme-legacy-stack-gap-enabled="true"]
+  > *:first-child,
+[data-meme-stack-direction-reverse="false"]
+  [data-meme-legacy-stack-gap-enabled="true"][data-meme-stack-flexbox-gap="false"]
+  > *:first-child,
+.flexbox-gap-not-supported
+  [data-meme-stack-direction-reverse="true"]
+  [data-meme-legacy-stack-gap-enabled="true"]
+  > *:last-child,
+[data-meme-stack-direction-reverse="true"]
+  [data-meme-legacy-stack-gap-enabled="true"][data-meme-stack-flexbox-gap="false"]
+  > *:last-child {
+  margin-top: 0;
+  margin-left: 0;
+}
+.flexbox-gap-not-supported
+  [data-meme-stack-direction-reverse="false"]
+  [data-meme-legacy-stack-gap-enabled="true"]
+  > *:last-child,
+[data-meme-stack-direction-reverse="false"]
+  [data-meme-legacy-stack-gap-enabled="true"][data-meme-stack-flexbox-gap="false"]
+  > *:last-child,
+.flexbox-gap-not-supported
+  [data-meme-stack-direction-reverse="true"]
+  [data-meme-legacy-stack-gap-enabled="true"]
+  > *:first-child,
+[data-meme-stack-direction-reverse="true"]
+  [data-meme-legacy-stack-gap-enabled="true"][data-meme-stack-flexbox-gap="false"]
+  > *:first-child {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+NavigationContainer
+  [data-meme-component-type="NavigationContainer"]
+  > *,
+[data-meme-component-type="NavigationContainer"]
+  > [data-meme-component-type] {
+  position: relative;
+}
+[data-meme-component-type="Scroll"]::-webkit-scrollbar {
+  display: none;
+}
+[data-meme-component-type="ScrollContentWrapper"] > * {
+  position: relative;
+}
+[data-meme-component-type="NativeScroll"] {
+  -webkit-overflow-scrolling: touch;
+}
+[data-meme-component-type="NativeScroll"] > * {
+  position: relative;
+}
+[data-meme-component-type="NativeScroll"].direction-both {
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+[data-meme-component-type="NativeScroll"].direction-vertical {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+[data-meme-component-type="NativeScroll"].direction-horizontal {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+[data-meme-component-type="NativeScroll"].direction-vertical > * {
+  width: 100% !important;
+}
+[data-meme-component-type="NativeScroll"].direction-horizontal > * {
+  height: 100% !important;
+}
+[data-meme-component-type="NativeScroll"].scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+[data-meme-component-type="PageContentWrapper"] > *,
+[data-meme-component-type="PageContentWrapper"]
+  > [data-meme-component-type] {
+  position: relative;
+}
+[data-meme-component-type="DeviceComponent"].no-device > * {
+  width: 100% !important;
+  height: 100% !important;
+}
+[data-is-present="false"],
+[data-is-present="false"] * {
+  pointer-events: none !important;
+}
+[data-meme-cursor="pointer"] {
+  cursor: pointer;
+}
+[data-meme-cursor="grab"] {
+  cursor: grab;
+}
+[data-meme-cursor="grab"]:active {
+  cursor: grabbing;
+}
+[data-meme-component-type="Frame"] *,
+[data-meme-component-type="Stack"] * {
+  pointer-events: auto;
+}
+[data-meme-generated] * {
+  pointer-events: unset;
+}
+.svgContainer svg {
+  display: block;
+}
+[data-reset="button"] {
+  border-width: 0;
+  padding: 0;
+  background: none;
+}
+[data-hide-scrollbars="true"]::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+[data-hide-scrollbars="true"]::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+.meme-cursor-none,
+.meme-cursor-none * {
+  cursor: none !important;
+}
+.meme-pointer-events-none,
+.meme-pointer-events-none * {
+  pointer-events: none !important;
+}
+.meme-k7DFD[data-border="true"]:after,
+.meme-k7DFD [data-border="true"]:after {
+  content: "";
+  border-width: var(--border-top-width, 0) var(--border-right-width, 0)
+    var(--border-bottom-width, 0) var(--border-left-width, 0);
+  border-color: var(--border-color, none);
+  border-style: var(--border-style, none);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  top: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+@supports (aspect-ratio: 1) {
+  body {
+    --meme-aspect-ratio-supported: auto;
+  }
+}
+.meme-body-augiA20Il-meme-k7DFD {
+  background: white;
+}
+.meme-k7DFD.meme-lux5qc,
+.meme-k7DFD .meme-lux5qc {
+  display: block;
+}
+.meme-k7DFD.meme-72rtr7 {
+  align-content: center;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+  height: min-content;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 1440px;
+}
+.meme-k7DFD .meme-pmomnu {
+  background-color: #fff;
+  flex: none;
+  height: 5022px;
+  overflow: hidden;
+  position: relative;
+  width: 1440px;
+}
+.meme-k7DFD .meme-1mtz8o7 {
+  background-color: #f5f5f5;
+  flex: none;
+  height: 5898px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+.meme-k7DFD .meme-ji6hml {
+  background-color: #000;
+  flex: none;
+  height: 86px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1440px;
+}
+.meme-k7DFD .meme-msy0nd {
+  aspect-ratio: 1.905951176600878 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 582px);
+  left: -705px;
+  position: absolute;
+  top: -339px;
+  transform: perspective(1200px) rotate(-92deg);
+  width: 1110px;
+  
+  
+  
+}
+.meme-k7DFD .meme-2l8mak {
+  aspect-ratio: 1.905951176600878 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 582px);
+  left: 1013px;
+  position: absolute;
+  top: 1172px;
+  transform: rotate(-162deg);
+  width: 1110px;
+}
+.meme-k7DFD .meme-1hz1fhm {
+  aspect-ratio: 1.905951099515768 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 970px);
+  left: -981px;
+  position: absolute;
+  top: 4137px;
+  transform: perspective(1200px) rotate(165deg);
+  width: 1848px;
+}
+.meme-k7DFD .meme-lkqyqf {
+  flex: none;
+  height: 1130px;
+  left: 1269px;
+  position: absolute;
+  top: -617px;
+  transform: perspective(1200px);
+  width: 621px;
+}
+.meme-k7DFD .meme-5f42ku {
+  flex: none;
+  height: 23px;
+  left: 366px;
+  overflow: visible;
+  position: absolute;
+  top: 31px;
+  width: 709px;
+}
+.meme-k7DFD .meme-ap1vlm {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 70px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 50%;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  width: min-content;
+}
+.meme-k7DFD .meme-l1ffl7 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 19px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 83px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-15yeaza {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 16px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 152px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1v25ngv {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 23px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 154px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-ltbet7 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 23px;
+  position: relative;
+  white-space: pre-wrap;
+  width: 110px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-13ufhkw {
+  flex: none;
+  height: 37px;
+  left: 1200px;
+  overflow: visible;
+  position: absolute;
+  top: 23px;
+  width: 140px;
+}
+.meme-k7DFD .meme-iu6dxx {
+  --border-bottom-width: 2px;
+  --border-color: #ffa500;
+  --border-left-width: 2px;
+  --border-right-width: 2px;
+  --border-style: solid;
+  --border-top-width: 2px;
+  border-radius: 15px;
+  flex: none;
+  height: 37px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 37.3769645690918px / 2);
+  width: 140px;
+}
+.meme-k7DFD .meme-uzc9xy {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 20px;
+  left: 14px;
+  position: absolute;
+  top: 11px;
+  white-space: pre-wrap;
+  width: 113px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-91idpa {
+  aspect-ratio: 0.9851301115241635 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 807px);
+  left: 645px;
+  position: absolute;
+  top: 236px;
+  transform: perspective(1200px);
+  width: 795px;
+}
+.meme-k7DFD .meme-c72aw7 {
+  flex: none;
+  height: 570px;
+  left: 0;
+  position: absolute;
+  top: 4264px;
+  transform: perspective(1200px);
+  width: 562px;
+}
+.meme-k7DFD .meme-zgfcfs {
+  flex: none;
+  height: 312px;
+  left: 74px;
+  overflow: visible;
+  position: absolute;
+  top: 245px;
+  transform: perspective(1200px);
+  width: 763px;
+}
+.meme-k7DFD .meme-13pxjh {
+  bottom: -157px;
+  flex: none;
+  height: 66px;
+  left: 61px;
+  overflow: visible;
+  position: absolute;
+  transform: perspective(1200px);
+  width: 248px;
+}
+.meme-k7DFD .meme-3izsog {
+  background-color: orange;
+  border-radius: 26px;
+  flex: none;
+  height: 66px;
+  position: absolute;
+  right: 0;
+  top: calc(50% - 66.23089599609375px / 2);
+  width: 248px;
+}
+.meme-k7DFD .meme-8xzw7o {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 35px;
+  left: 24px;
+  position: absolute;
+  top: 16px;
+  white-space: pre-wrap;
+  width: 199px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-7ctrfu {
+  --meme-paragraph-spacing: 0px;
+  bottom: -80px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-l1b9xh {
+  bottom: -202px;
+  flex: none;
+  height: 170px;
+  left: -53px;
+  position: absolute;
+  transform: perspective(1200px);
+  width: 147px;
+}
+.meme-k7DFD .meme-1ggzn9u {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 298px;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  white-space: pre-wrap;
+  width: 763px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1kh8ler {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 298px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -9px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-yklukc {
+  aspect-ratio: 1.1192660450323577 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 252px);
+  left: 28px;
+  position: absolute;
+  top: 0;
+  width: 282px;
+}
+.meme-k7DFD .meme-bynxlw {
+  aspect-ratio: 1.3966941838583435 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 46px);
+  left: 95px;
+  position: absolute;
+  top: 20px;
+  width: 64px;
+}
+.meme-k7DFD .meme-na2wj5 {
+  background: linear-gradient(
+    180deg,
+    #373736 0%,
+    rgba(162, 219, 16, 1) 100%
+  );
+  border-radius: 41px;
+  box-shadow: 0 2.2138051986694336px 2.2138051986694336px #0000,
+    0 5.32008171081543px 5.32008171081543px #00000004,
+    0 10.017241477966309px 10.017241477966309px #0000000a;
+  flex: none;
+  height: 223px;
+  left: 81px;
+  position: absolute;
+  top: 1411px;
+  transform: perspective(1200px);
+  width: 677px;
+}
+.meme-k7DFD .meme-e8y4e0 {
+  background: linear-gradient(
+    180deg,
+    #373736 0%,
+    rgba(162, 219, 16, 1) 100%
+  );
+  border-radius: 41px;
+  box-shadow: 0 2.2138051986694336px 2.2138051986694336px #0000,
+    0 5.32008171081543px 5.32008171081543px #00000004,
+    0 10.017241477966309px 10.017241477966309px #0000000a;
+  flex: none;
+  height: 223px;
+  left: 683px;
+  position: absolute;
+  top: 1691px;
+  transform: perspective(1200px);
+  width: 677px;
+}
+.meme-k7DFD .meme-jpbgsj {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 127px;
+  position: absolute;
+  top: 1448px;
+  transform: perspective(1200px);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-7g9x62 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 712px;
+  position: absolute;
+  top: 1741px;
+  transform: perspective(1200px);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-10ezj0c {
+  flex: none;
+  height: 111px;
+  left: calc(49.93055555555558% - 619px / 2);
+  overflow: hidden;
+  position: absolute;
+  top: 1267px;
+  transform: perspective(1200px);
+  width: 619px;
+}
+.meme-k7DFD .meme-15em7ck {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 51%;
+  transform: translate(-50%, -50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-p4s28x {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1scom9 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 1215px;
+  transform: perspective(1200px) translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1sxmqei {
+  flex: none;
+  height: 31px;
+  left: 135px;
+  position: absolute;
+  top: 964px;
+  width: 68px;
+}
+.meme-k7DFD .meme-1ify068 {
+  flex: none;
+  height: 488px;
+  left: -157px;
+  overflow: visible;
+  position: absolute;
+  top: 1753px;
+  transform: perspective(1200px);
+  width: 529px;
+}
+.meme-k7DFD .meme-1qgxe9h {
+  flex: none;
+  height: 489px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 530px;
+}
+.meme-k7DFD .meme-1syj0cg {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 72%;
+  position: absolute;
+  top: 170px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-wraj1i {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 209px;
+  position: absolute;
+  top: 962px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1fbmz6e {
+  background-color: #96ca0f;
+  flex: none;
+  height: 698px;
+  left: -2px;
+  position: absolute;
+  top: 2177px;
+  width: 1442px;
+}
+.meme-k7DFD .meme-1g3e9hd {
+  flex: none;
+  height: 699px;
+  left: -42px;
+  position: absolute;
+  top: calc(52.94703305455995% - 699px / 2);
+  width: 1442px;
+}
+.meme-k7DFD .meme-1nnxfzc {
+  flex: none;
+  height: 229px;
+  left: 23px;
+  overflow: visible;
+  position: absolute;
+  top: 2181px;
+  width: 1386px;
+}
+.meme-k7DFD .meme-11za5zg {
+  background-color: #000;
+  flex: none;
+  height: 205px;
+  left: 0;
+  position: absolute;
+  top: 23px;
+  width: 255px;
+}
+.meme-k7DFD .meme-l6y1vi {
+  background-color: #000;
+  flex: none;
+  height: 205px;
+  left: 283px;
+  position: absolute;
+  top: 23px;
+  width: 255px;
+}
+.meme-k7DFD .meme-2wohup {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 28px;
+  left: 25px;
+  position: absolute;
+  top: 90px;
+  white-space: pre-wrap;
+  width: 208px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1p6mh6t {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 25px;
+  left: 303px;
+  position: absolute;
+  top: 91px;
+  white-space: pre-wrap;
+  width: 216px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1dwuwdz {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 60px;
+  left: 16px;
+  position: absolute;
+  top: 126px;
+  white-space: pre-wrap;
+  width: 226px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-14ajnze {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 60px;
+  left: 366px;
+  position: absolute;
+  top: 126px;
+  white-space: pre-wrap;
+  width: 90px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-gbl7g0 {
+  background-color: #a2db10;
+  box-shadow: 0 1.411300778388977px 2.1307876110076904px #0000,
+    0 3.391551971435547px 5.120578765869141px #00000004,
+    0 6.38599157333374px 9.641594886779785px #00000009,
+    0 11.391517639160156px 17.198957443237305px #0000000e,
+    0 21.306581497192383px 32.168758392333984px #0001,
+    0 51px 77px #00000012;
+  flex: none;
+  height: 205px;
+  left: 565px;
+  position: absolute;
+  top: 23px;
+  width: 255px;
+}
+.meme-k7DFD .meme-1iww6t {
+  flex: none;
+  height: 29px;
+  left: calc(51.17187500000002% - 57px / 2);
+  position: absolute;
+  top: 33px;
+  width: 57px;
+}
+.meme-k7DFD .meme-2n1vuy {
+  background-color: #000;
+  flex: none;
+  height: 205px;
+  left: 848px;
+  position: absolute;
+  top: 23px;
+  width: 255px;
+}
+.meme-k7DFD .meme-7jczy0 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 28px;
+  left: calc(49.940582236858326% - 42.35293960571289px / 2);
+  position: absolute;
+  top: 91px;
+  white-space: pre-wrap;
+  width: 42px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-5dgy3w {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 20px;
+  left: 865px;
+  position: absolute;
+  top: 93px;
+  white-space: pre-wrap;
+  width: 227px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-yyrvow {
+  background-color: #000;
+  flex: none;
+  height: 205px;
+  left: 1131px;
+  position: absolute;
+  top: 23px;
+  width: 255px;
+}
+.meme-k7DFD .meme-hmlycj {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 60px;
+  left: 872px;
+  position: absolute;
+  top: 126px;
+  white-space: pre-wrap;
+  width: 210px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-11d5q2w {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 60px;
+  left: calc(49.966046992490476% - 91.05882263183594px / 2);
+  position: absolute;
+  top: 126px;
+  white-space: pre-wrap;
+  width: 91px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-xk1oa3 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 20px;
+  left: 1213px;
+  position: absolute;
+  top: 92px;
+  white-space: pre-wrap;
+  width: 94px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1myg8oz {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 60px;
+  left: 1220px;
+  position: absolute;
+  top: 125px;
+  white-space: pre-wrap;
+  width: 79px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1eyqqhj {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 2471px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-19peisp {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 2570px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1gpsrql {
+  aspect-ratio: 1.01417004048583 / 1;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 494px);
+  left: 1px;
+  position: absolute;
+  top: 2381px;
+  width: 501px;
+}
+.meme-k7DFD .meme-121zhyu {
+  background: linear-gradient(
+    180deg,
+    #2f2f2f 0%,
+    rgba(162, 219, 16, 1) 100%
+  );
+  flex: none;
+  height: 116px;
+  left: 1px;
+  position: absolute;
+  top: 1042px;
+  width: 1439px;
+}
+.meme-k7DFD .meme-1acpiwe {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 90px;
+  position: absolute;
+  top: 1074px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1gjx9bh {
+  background-color: #fff;
+  box-shadow: 0 2.767256498336792px 2.2138051986694336px #00000005,
+    0 12.521552085876465px 10.017241477966309px #00000009;
+  flex: none;
+  height: 133px;
+  left: 0;
+  position: absolute;
+  top: 2872px;
+  width: 1440px;
+}
+.meme-k7DFD .meme-62rfg1 {
+  background: linear-gradient(
+    180deg,
+    #373736 0%,
+    rgba(162, 219, 16, 1) 100%
+  );
+  box-shadow: 0 2.767256498336792px 2.2138051986694336px #00000005,
+    0 12.521552085876465px 10.017241477966309px #00000009;
+  flex: none;
+  height: 133px;
+  left: 0;
+  position: absolute;
+  top: 3798px;
+  width: 1440px;
+}
+.meme-k7DFD .meme-620oip {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 3839px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1ahad60 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 2896px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-c18bi7 {
+  flex: none;
+  height: 562px;
+  left: 77px;
+  overflow: visible;
+  position: absolute;
+  top: 3075px;
+  transform: perspective(1200px);
+  width: 1286px;
+}
+.meme-k7DFD .meme-evvg2l {
+  flex: none;
+  height: 562px;
+  left: 0;
+  overflow: visible;
+  position: absolute;
+  top: 0;
+  width: 1286px;
+}
+.meme-k7DFD .meme-1qa6zfl {
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 2.767256498336792px 2.2138051986694336px #00000005,
+    0 6.650102138519287px 5.32008171081543px #00000007,
+    0 12.521552085876465px 10.017241477966309px #00000009,
+    0 22.3363094329834px 17.869047164916992px #0000000b,
+    0 41.777610778808594px 33.422088623046875px #0000000d,
+    0 100px 80px #00000012;
+  flex: none;
+  height: 521px;
+  left: 0;
+  position: absolute;
+  top: 41px;
+  width: 409px;
+}
+.meme-k7DFD .meme-s59zgz {
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 2.767256498336792px 2.2138051986694336px #00000005,
+    0 6.650102138519287px 5.32008171081543px #00000007,
+    0 12.521552085876465px 10.017241477966309px #00000009,
+    0 22.3363094329834px 17.869047164916992px #0000000b,
+    0 41.777610778808594px 33.422088623046875px #0000000d,
+    0 100px 80px #00000012;
+  flex: none;
+  height: 521px;
+  left: 444px;
+  position: absolute;
+  top: 41px;
+  width: 409px;
+}
+.meme-k7DFD .meme-ez6sqb {
+  background-color: #fff;
+  border-radius: 32px;
+  box-shadow: 0 2.767256498336792px 2.2138051986694336px #00000005,
+    0 6.650102138519287px 5.32008171081543px #00000007,
+    0 12.521552085876465px 10.017241477966309px #00000009,
+    0 22.3363094329834px 17.869047164916992px #0000000b,
+    0 41.777610778808594px 33.422088623046875px #0000000d,
+    0 100px 80px #00000012;
+  flex: none;
+  height: 521px;
+  left: 877px;
+  position: absolute;
+  top: 41px;
+  width: 409px;
+}
+.meme-k7DFD .meme-1cigj3h {
+  aspect-ratio: 1 / 1;
+  background-color: #a2db10;
+  border-radius: 100%;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 103px);
+  left: 153px;
+  position: absolute;
+  top: 0;
+  width: 103px;
+}
+.meme-k7DFD .meme-5544r6 {
+  aspect-ratio: 1 / 1;
+  background-color: #a2db10;
+  border-radius: 100%;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 103px);
+  left: 597px;
+  position: absolute;
+  top: 0;
+  width: 103px;
+}
+.meme-k7DFD .meme-dgey0i {
+  aspect-ratio: 1 / 1;
+  background-color: #a2db10;
+  border-radius: 100%;
+  flex: none;
+  height: var(--meme-aspect-ratio-supported, 103px);
+  left: 1030px;
+  position: absolute;
+  top: 0;
+  width: 103px;
+}
+.meme-k7DFD .meme-xlv3qg {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 45px;
+  position: absolute;
+  top: 157px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1usdnwv {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 540px;
+  position: absolute;
+  top: 180px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1p9v8pa {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 928px;
+  position: absolute;
+  top: 180px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-hcpdn9 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 189px;
+  position: absolute;
+  top: 21px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-gauf80 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 633px;
+  position: absolute;
+  top: 21px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-uwmvcf {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 1065px;
+  position: absolute;
+  top: 21px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-nimeyr {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 121px;
+  left: 39px;
+  position: absolute;
+  top: 263px;
+  white-space: pre-wrap;
+  width: 322px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-12sfkfx {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 184px;
+  left: 467px;
+  position: absolute;
+  top: 263px;
+  white-space: pre-wrap;
+  width: 364px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-1ti7rvp {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: 106px;
+  left: 900px;
+  position: absolute;
+  top: 263px;
+  white-space: pre-wrap;
+  width: 364px;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.meme-k7DFD .meme-191h71q {
+  flex: none;
+  height: 41px;
+  left: 1114px;
+  position: absolute;
+  text-decoration: none;
+  top: 3563px;
+  width: 90px;
+}
+.meme-k7DFD .meme-10quygo {
+  flex: none;
+  height: 46px;
+  left: 174px;
+  overflow: visible;
+  position: absolute;
+  top: 3559px;
+  width: 214px;
+}
+.meme-k7DFD .meme-asbko2,
+.meme-k7DFD .meme-1ew0vtm {
+  background-color: #000;
+  flex: none;
+  height: 46px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 214px;
+}
+.meme-k7DFD .meme-1cun5eh {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 19px;
+  position: absolute;
+  top: 11px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-newq5x {
+  flex: none;
+  height: 46px;
+  left: 613px;
+  overflow: visible;
+  position: absolute;
+  top: 3559px;
+  width: 214px;
+}
+.meme-k7DFD .meme-1msgv4a {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 32px;
+  position: absolute;
+  top: 11px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-j9tdie {
+  flex: none;
+  height: 114px;
+  left: 207px;
+  overflow: visible;
+  position: absolute;
+  top: 4019px;
+  width: 1019px;
+}
+.meme-k7DFD .meme-xuk6wp {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 5px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-5qr0tv {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-x8i0wt {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 3972px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1kol9tt {
+  flex: none;
+  height: 532px;
+  left: 447px;
+  overflow: visible;
+  position: absolute;
+  top: 4183px;
+  width: 546px;
+}
+.meme-k7DFD .meme-hz8eer {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 0;
+  position: absolute;
+  top: 0;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-128lxm9 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 219px;
+  position: absolute;
+  top: 192px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-s06j6z {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 439px;
+  position: absolute;
+  top: 423px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-cy1kla {
+  background-color: #000;
+  flex: none;
+  height: 73px;
+  left: 0;
+  position: absolute;
+  top: 4949px;
+  width: 1440px;
+}
+.meme-k7DFD .meme-jysnej {
+  background-color: #a2db10;
+  flex: none;
+  height: 119px;
+  left: 0;
+  position: absolute;
+  top: 4834px;
+  width: 1440px;
+}
+.meme-k7DFD .meme-c4nchv,
+.meme-k7DFD .meme-87ddnv {
+  flex: none;
+  height: 78px;
+  left: 153px;
+  overflow: visible;
+  position: absolute;
+  top: 4867px;
+  width: 1135px;
+}
+.meme-k7DFD .meme-5gqpk7,
+.meme-k7DFD .meme-mkr356 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 27%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1ryuzmv,
+.meme-k7DFD .meme-tv5k7v {
+  flex: none;
+  height: 50px;
+  left: 651px;
+  overflow: visible;
+  position: absolute;
+  top: 2px;
+  width: 484px;
+}
+.meme-k7DFD .meme-1s7nmdc,
+.meme-k7DFD .meme-oorziz {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 48%;
+  position: absolute;
+  top: 0;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1v1aqkv,
+.meme-k7DFD .meme-ysncwk {
+  flex: none;
+  height: 44px;
+  left: 466px;
+  position: absolute;
+  top: 4px;
+  width: 18px;
+}
+.meme-k7DFD .meme-keh9nl {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 14px;
+  height: min-content;
+  justify-content: flex-start;
+  left: 93px;
+  overflow: visible;
+  padding: 0;
+  position: absolute;
+  top: 4978px;
+  width: min-content;
+}
+.meme-k7DFD .meme-tyabll,
+.meme-k7DFD .meme-u20pa,
+.meme-k7DFD .meme-xxdo8e {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-620oj8 {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 549px;
+  position: absolute;
+  top: 4978px;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-w314lm {
+  flex: none;
+  height: 24px;
+  left: 1295px;
+  position: absolute;
+  top: 4976px;
+  width: 53px;
+}
+.meme-k7DFD .meme-2fhafs {
+  flex: none;
+  height: 128px;
+  left: 134px;
+  overflow: hidden;
+  position: absolute;
+  top: 776px;
+  transform: perspective(1200px);
+  width: 306px;
+}
+.meme-k7DFD .meme-1lbiz9d {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 1px;
+  transform: translate(-50%);
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-1jo44a5 {
+  --meme-paragraph-spacing: 0px;
+  bottom: 9px;
+  flex: none;
+  height: auto;
+  left: 1px;
+  position: absolute;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-eng91i {
+  --meme-paragraph-spacing: 0px;
+  bottom: 0;
+  flex: none;
+  height: auto;
+  left: 4px;
+  position: absolute;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-sic1t9 {
+  --meme-paragraph-spacing: 0px;
+  bottom: 0;
+  flex: none;
+  height: auto;
+  left: 80px;
+  position: absolute;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-inafvx {
+  --meme-paragraph-spacing: 0px;
+  bottom: 0;
+  flex: none;
+  height: auto;
+  left: 159px;
+  position: absolute;
+  white-space: pre;
+  width: auto;
+}
+.meme-k7DFD .meme-vmun0p {
+  flex: none;
+  height: 83px;
+  left: 393px;
+  overflow: visible;
+  position: absolute;
+  top: 1986px;
+  width: 955px;
+}
+.meme-k7DFD .meme-kjn3mg {
+  background-color: #000;
+  border-radius: 26px;
+  flex: none;
+  height: 83px;
+  left: calc(50% - 477.5px);
+  position: absolute;
+  top: 0;
+  width: 955px;
+}
+.meme-k7DFD .meme-uwbbm9 {
+  flex: none;
+  height: 47px;
+  left: 356px;
+  overflow: visible;
+  position: absolute;
+  top: 18px;
+  width: 243px;
+}
+.meme-k7DFD .meme-1pjzhvk {
+  flex: none;
+  height: 38px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 38px;
+}
+.meme-k7DFD .meme-156yv9n {
+  --meme-paragraph-spacing: 0px;
+  flex: none;
+  height: auto;
+  left: 68px;
+  position: absolute;
+  top: 0;
+  white-space: pre;
+  width: auto;
+}
+@supports (background: -webkit-named-image(i)) and (not (scale: 1)) {
+  .meme-k7DFD.meme-72rtr7,
+  .meme-k7DFD .meme-ap1vlm,
+  .meme-k7DFD .meme-keh9nl {
+    gap: 0px;
+  }
+  .meme-k7DFD.meme-72rtr7 > * {
+    margin: 5px 0;
+  }
+  .meme-k7DFD.meme-72rtr7 > :first-child {
+    margin-top: 0;
+  }
+  .meme-k7DFD.meme-72rtr7 > :last-child {
+    margin-bottom: 0;
+  }
+  .meme-k7DFD .meme-ap1vlm > * {
+    margin: 0 35px;
+  }
+  .meme-k7DFD .meme-ap1vlm > :first-child,
+  .meme-k7DFD .meme-keh9nl > :first-child {
+    margin-left: 0;
+  }
+  .meme-k7DFD .meme-ap1vlm > :last-child,
+  .meme-k7DFD .meme-keh9nl > :last-child {
+    margin-right: 0;
+  }
+  .meme-k7DFD .meme-keh9nl > * {
+    margin: 0 7px;
+  }
+}
