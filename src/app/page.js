@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
-      <div id="main">
+      <div id="main" className=" scale-[50%] md:scale-[75%] xl:scale-[100%]">
         <div
           className="meme-k7DFD meme-72rtr7"
           style={{
@@ -431,6 +432,7 @@ export default function Home() {
                 }}
               >
                 <Image
+                  
                   width={100}
                   height={100}
                   alt=""
@@ -2017,17 +2019,17 @@ export default function Home() {
                 name="Group 8"
               >
                 <div
-                  className="meme-1qa6zfl"
+                  className="meme-1qa6zfl hover:scale-105 transition-all duration-300 hover:shadow-[#83b82a] hover:shadow-xl"
                   data-meme-name="Rectangle 20"
                   name="Rectangle 20"
                 />
                 <div
-                  className="meme-s59zgz"
+                  className="meme-s59zgz hover:scale-105 transition-all duration-300 hover:shadow-[#83b82a] hover:shadow-xl"
                   data-meme-name="Rectangle 21"
                   name="Rectangle 21"
                 />
                 <div
-                  className="meme-ez6sqb"
+                  className="meme-ez6sqb hover:scale-105 transition-all duration-300 hover:shadow-[#83b82a] hover:shadow-xl"
                   data-meme-name="Rectangle 22"
                   name="Rectangle 22"
                 />

@@ -17,6 +17,11 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%; /* Set the initial width */
+  height: 100vh; /* Set the initial height */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+ /* Adjust the scale factor as needed */
+  
 }
 :root {
   -webkit-font-smoothing: antialiased;
@@ -3293,6 +3298,7 @@ NavigationContainer
   position: absolute;
   top: 41px;
   width: 409px;
+  
 }
 .meme-k7DFD .meme-s59zgz {
   background-color: #fff;
